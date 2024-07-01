@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Combined Page with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {},
+            },
+        };
+    </script>
+</head>
+
+<body class="w-11/12 mx-auto container">
+    <main class="my-12">
+        <!-- top part -->
+        <div class="mb-60 flex justify-between">
+            <!-- logo -->
+            <div>
+                <a href="index.html"><img class="cursor-pointer" src=".//images/Logo.png" alt="logo" /></a>
+            </div>
+            <!-- headings -->
+            <div class="flex gap-[120px]">
+                <ul class="flex flex-col gap-[17px]">
+                    <li class="text-2xl font-black mb-6">
+                        <a href="products.html">Products</a><span class="text-yellow-500">.</span>
+                    </li>
+                    <li class="font-medium text-xl">T-shirts</li>
+                    <li class="font-medium text-xl">Hoodies</li>
+                    <li class="font-medium text-xl">Mix</li>
+                </ul>
+                <ul class="flex flex-col gap-[17px]">
+                    <li class="text-2xl font-black mb-6">
+                        Collections<span class="text-yellow-500">.</span>
+                    </li>
+                    <li class="font-medium text-xl">All Black</li>
+                    <li class="font-medium text-xl">Rick & Morty</li>
+                    <li class="font-medium text-xl">Mix</li>
+                </ul>
+                <ul class="flex flex-col gap-[17px]">
+                    <li class="text-2xl font-black mb-6">
+                        Support<span class="text-yellow-500">.</span>
+                    </li>
+                    <li class="font-medium text-xl">About</li>
+                    <li class="font-medium text-xl">Contact</li>
+                    <li class="font-medium text-xl">FAQ</li>
+                </ul>
+                <ul class="flex flex-col gap-[17px]">
+                    <li class="text-2xl font-black mb-6">
+                        Account<span class="text-yellow-500">.</span>
+                    </li>
+                    <li class="font-medium text-xl">Order History</li>
+                    <li class="font-medium text-xl">Coupons</li>
+                    <li class="font-medium text-xl">Settings</li>
+                </ul>
+            </div>
+            <!-- icons -->
+            <div>
+                <div class="flex gap-5">
+                    <div class="bg-black p-4 rounded-2xl text-white">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <div class="bg-black p-4 rounded-2xl text-white">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container section -->
+        <section class="mt-20 flex gap-[50px]">
+            <!-- left -->
+            <!-- left holder -->
+            <div class="flex flex-col gap-[200px] justify-center">
+                <!-- left top -->
+                <div class="flex flex-col gap-[31px]">
+                    <p class="text-4xl font-black leading-none">Boxy fit
+                        Pop Smoke T-shirt</p>
+                    <div>
+                        <img src="./images/Vector 1.png" alt="" class="absolute ">
+                        <p class="text-3xl font-black leading-none relative left-3 top-3">
+                            35 AZN
+                        </p>
+                    </div>
+                </div>
+
+                <!-- left bottom accordion -->
+                <div class="w-[438px] bg-white rounded-lg">
+                    <!-- Accordion Item 1 -->
+                    <div class="border-b border-gray-200">
+                        <button class="w-full text-left px-4 py-2 focus:outline-none flex justify-between items-center">
+                            <span class="font-bold">Description</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="px-4 py-2">
+                            <p class="text-gray-700 font-normal">Vitae porta eu mauris, risus mauris faucibus in diam
+                                nunc. Ornare
+                                tristique viverra libero facilisi sagittis. Laoreet id euismod vitae commodo. Tincidunt
+                                amet felis feugiat vitae sit. Dictum lobortis vel fusce mauris lorem volutpat.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 2 -->
+                    <div class="border-b border-gray-200">
+                        <button class="w-full text-left px-4 py-2 focus:outline-none flex justify-between items-center">
+                            <span class="font-bold">Delivery & Returns</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="px-4 py-2">
+                            <p class="text-gray-700 font-normal hidden">Vitae porta eu mauris, risus mauris faucibus in
+                                diam
+                                nunc. Ornare
+                                tristique viverra libero facilisi sagittis. Laoreet id euismod vitae commodo. Tincidunt
+                                amet felis feugiat vitae sit. Dictum lobortis vel fusce mauris lorem volutpat.</p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 3 -->
+                    <div class="border-b border-gray-200">
+                        <button class="w-full text-left px-4 py-2 focus:outline-none flex justify-between items-center">
+                            <span class="font-bold">Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="px-4 py-2">
+                            <p class="text-gray-700 font-normal hidden">Vitae porta eu mauris, risus mauris faucibus in
+                                diam
+                                nunc. Ornare
+                                tristique viverra libero facilisi sagittis. Laoreet id euismod vitae commodo. Tincidunt
+                                amet felis feugiat vitae sit. Dictum lobortis vel fusce mauris lorem volutpat.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- center img -->
+            <div>
+                <img src="./images/image 19.png" alt="" height="570px" width="570px" class="">
+            </div>
+
+            <!-- right -->
+            <div class="flex flex-col justify-between">
+                <section class="">
+                    <div class="">
+                        <!-- colors div -->
+                        <div class="flex flex-col gap-4  py-4">
+                            <div class="flex items-baseline justify-between">
+                                <p class="font-bold">Choose your color</p>
+                                <!-- <i class="fa-solid fa-chevron-up"></i> -->
+                            </div>
+                            <!-- colors -->
+                            <div>
+                                <ul class="flex gap-[9px]">
+                                    <button>
+                                        <li class="w-[30px] h-[30px] rounded-full bg-[#FFC700]"></li>
+                                    </button>
+                                    <button>
+                                        <li class="w-[30px] h-[30px] rounded-full bg-black"></li>
+                                    </button>
+                                    <button>
+                                        <li class="w-[30px] h-[30px] rounded-full bg-[#0075FF]"></li>
+                                    </button>
+                                    <button>
+                                        <li class="w-[30px] h-[30px] rounded-full bg-[#E74C3C]"></li>
+                                    </button>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- sizes div -->
+                        <div class="flex flex-col gap-4 py-4">
+                            <div class="flex items-baseline justify-between">
+                                <p class="font-bold">Choose your size</p>
+                                <!-- <i class="fa-solid fa-chevron-up"></i> -->
+                            </div>
+                            <!-- sizes -->
+                            <div>
+                                <ul class="flex gap-[9px] items-center">
+                                    <button>
+                                        <li class="w-12 text-center font-bold h-[30px] rounded-full bg-[#E5E5E5]">XS
+                                        </li>
+                                    </button>
+                                    <button>
+                                        <li class="w-12 text-center font-bold h-[30px] rounded-full bg-[#E5E5E5]">S</li>
+                                    </button>
+                                    <button>
+                                        <li class="w-12 text-center font-bold h-[30px] rounded-full bg-[#E5E5E5]">M</li>
+                                    </button>
+                                    <button>
+                                        <li class="w-12 text-center font-bold h-[30px] rounded-full bg-[#E5E5E5]">L</li>
+                                    </button>
+                                    <button>
+                                        <li class="w-12 text-center font-bold h-[30px] rounded-full bg-[#E5E5E5]">XL
+                                        </li>
+                                    </button>
+                                    <button>
+                                        <li class="w-12 text-center font-bold h-[30px] rounded-full bg-[#E5E5E5]">XXL
+                                        </li>
+                                    </button>
+                                </ul>
+                            </div>
+                        </div>
+                </section>
+
+                <!-- right bottom -->
+                <div class="flex flex-col gap-[32px]">
+                    <!-- counter -->
+                    <div class="flex gap-6">
+                        <button><i class="fa-solid fa-minus"></i></button>
+                        <div class="px-[10px] py-[6px] border-2 border-solid border-black rounded-lg">
+                            <p class="font-black">0</p>
+                        </div>
+                        <button><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <!-- add to cart -->
+                    <div>
+                        <a href="cart.html">
+                            <button
+                                class="border-2 border-black font-bold transition-all hover:border-2  hover:bg-white hover:text-black flex items-center gap-[200px] px-[30px] py-[23px] bg-black text-white rounded-2xl">Add
+                                To Card
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- footer -->
+        <footer class="mt-40 mb-12">
+            <div class="flex justify-between">
+                <!-- logo and name -->
+                <div class="flex gap-14 items-center">
+                    <img src="./images/Logo (1).png" alt="logo" />
+                    <p>© 2024 Company Name.</p>
+                </div>
+                <!-- right -->
+                <div class="flex items-center">
+                    <ul class="flex gap-12 items-center">
+                        <li>Privacy Policy</li>
+                        <li>Terms & Conditions</li>
+                        <li>Contact</li>
+                        <li class="flex gap-2 items-baseline bg-black text-white px-2 py-[6px] rounded-md"><i
+                                class="fa-solid fa-globe"></i><button>English</button></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>
