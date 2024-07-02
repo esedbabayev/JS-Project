@@ -85,39 +85,38 @@
             <div class="flex flex-col gap-[200px] justify-center">
                 <!-- left top -->
                 <div class="flex flex-col gap-[31px]">
-                    <p class="text-4xl font-black leading-none">Boxy fit
-                        Pop Smoke T-shirt</p>
+                    <p id="product-name" class="text-4xl font-black leading-none"></p>
                     <div>
                         <img src="./images/Vector 1.png" alt="" class="absolute ">
-                        <p class="text-3xl font-black leading-none relative left-3 top-3">
-                            35 AZN
+                        <p id="product-price" class="text-3xl font-black leading-none relative left-3 top-3">
+                             USD
                         </p>
                     </div>
                 </div>
-
+      
                 <!-- left bottom accordion -->
-                <div class="w-[438px] bg-white rounded-lg">
+                <div id="" class="w-[438px] bg-white rounded-lg">
                     <!-- Accordion Item 1 -->
-                    <div class="border-b border-gray-200">
+                    <div class="accordion-item border-b border-gray-200">
                         <button class="w-full text-left px-4 py-2 focus:outline-none flex justify-between items-center">
                             <span class="font-bold">Description</span>
-                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-down transition-all"></i>
                         </button>
                         <div class="px-4 py-2">
-                            <p class="text-gray-700 font-normal">Vitae porta eu mauris, risus mauris faucibus in diam
+                            <p class="content text-gray-700 font-normal hidden">Vitae porta eu mauris, risus mauris faucibus in diam
                                 nunc. Ornare
                                 tristique viverra libero facilisi sagittis. Laoreet id euismod vitae commodo. Tincidunt
                                 amet felis feugiat vitae sit. Dictum lobortis vel fusce mauris lorem volutpat.</p>
                         </div>
                     </div>
                     <!-- Accordion Item 2 -->
-                    <div class="border-b border-gray-200">
+                    <div class="accordion-item border-b border-gray-200">
                         <button class="w-full text-left px-4 py-2 focus:outline-none flex justify-between items-center">
                             <span class="font-bold">Delivery & Returns</span>
-                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-down transition-all"></i>
                         </button>
                         <div class="px-4 py-2">
-                            <p class="text-gray-700 font-normal hidden">Vitae porta eu mauris, risus mauris faucibus in
+                            <p class="content text-gray-700 font-normal hidden">Vitae porta eu mauris, risus mauris faucibus in
                                 diam
                                 nunc. Ornare
                                 tristique viverra libero facilisi sagittis. Laoreet id euismod vitae commodo. Tincidunt
@@ -125,29 +124,29 @@
                         </div>
                     </div>
                     <!-- Accordion Item 3 -->
-                    <div class="border-b border-gray-200">
+                    <div class="accordion-item border-b border-gray-200">
                         <button class="w-full text-left px-4 py-2 focus:outline-none flex justify-between items-center">
                             <span class="font-bold">Details</span>
-                            <i class="fas fa-chevron-down"></i>
+                            <i class="fas fa-chevron-down transition-all"></i>
                         </button>
                         <div class="px-4 py-2">
-                            <p class="text-gray-700 font-normal hidden">Vitae porta eu mauris, risus mauris faucibus in
+                            <p class="content text-gray-700 font-normal hidden">Vitae porta eu mauris, risus mauris faucibus in
                                 diam
                                 nunc. Ornare
                                 tristique viverra libero facilisi sagittis. Laoreet id euismod vitae commodo. Tincidunt
                                 amet felis feugiat vitae sit. Dictum lobortis vel fusce mauris lorem volutpat.</p>
                         </div>
                     </div>
-
+      
                 </div>
             </div>
             </div>
-
+      
             <!-- center img -->
             <div>
-                <img src="./images/image 19.png" alt="" height="570px" width="570px" class="">
+                <img  id="product-image" src="" alt="" height="570px" width="570px" class="">
             </div>
-
+      
             <!-- right -->
             <div class="flex flex-col justify-between">
                 <section class="">
@@ -210,7 +209,7 @@
                             </div>
                         </div>
                 </section>
-
+      
                 <!-- right bottom -->
                 <div class="flex flex-col gap-[32px]">
                     <!-- counter -->
@@ -233,7 +232,7 @@
                     </div>
                 </div>
             </div>
-
+      
         </section>
 
 
@@ -257,6 +256,9 @@
                 </div>
             </div>
         </footer>
+        
+        <script src="js/product.js"></script>
+        <script src="js/accordion.js"></script>
 </body>
 
 </html>
