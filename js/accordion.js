@@ -5,7 +5,6 @@ accordionItems.forEach((item) => {
     const icon = item.querySelector(".fas");
 
     item.addEventListener("click", () => {
-        // Close all other accordion items
         accordionItems.forEach((otherItem) => {
             if (otherItem !== item) {
                 const otherContent = otherItem.querySelector(".content");
@@ -15,8 +14,6 @@ accordionItems.forEach((item) => {
                 otherIcon.classList.add("fa-chevron-down");
             }
         });
-
-        // Toggle the clicked accordion item
         content.classList.toggle("hidden");
         icon.classList.toggle("fa-chevron-down");
         icon.classList.toggle("fa-chevron-up");
